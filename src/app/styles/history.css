@@ -1,0 +1,150 @@
+  .main {
+    background-color: #003329;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    background-color: #03422b;
+    border-radius: 20px;
+    
+    
+  }
+  .section.law.article-17{
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black box */
+  }
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    color: rgb(10, 71, 85);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 -100px 100px black;
+    
+   
+  }
+  .first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+  }
+
+  .second{
+    padding: 50px 70px;
+    
+    }
+  .making-constitution {
+    width: 100%;
+    color:white;
+    background-color: #051a16;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .law {
+    background-color: #72787d;
+    position: relative;
+    
+  }
+  .law h3 {
+    font-size: 20px;
+    
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+     /* Yellow background similar to the "Eccentric" text */
+    color: white; /* Black text */
+    font-weight: bold;
+    
+    letter-spacing: 1px;
+    border-radius: 5px;
+  }
+  
+  /* Arrow styling */
+  .arrow {
+    font-size: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(6, 6, 6);
+  }
+  .container div:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+  }
+  .container div{
+    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /* Section Specific Backgrounds */
+  .making-constitution {
+    /*background-image: url('constitution-background.jpg');*/
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .article-17 {
+    background-image: url('/br.jpeg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  .workplace-harassment {
+    background-image: url('/work.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .dowry-prohibition {
+    background-image: url('/dowry.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hindu-marriage {
+    background-image: url('/marr.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .rti-act {
+    background-image: url('/info.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .sc-st-act {
+    background-image: url('/sc.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .maternity-benefit {
+    background-image: url('/mom.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .juvenile-justice {
+    background-image: url('/juvy.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .nrega {
+    background-image: url('/nrega.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  

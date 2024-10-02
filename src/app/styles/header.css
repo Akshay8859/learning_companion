@@ -1,0 +1,135 @@
+.heading{ 
+    background-color: #359381;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+.heading .log{
+    background-image: url("/logo1.png");
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid black;
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #fff;
+    color: #359381;
+}
+
+
+
+.user-pic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px solid black;
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: #fff;
+    padding: 20px;
+    margin: 7px;
+    border-radius: 20px;
+    color: black;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3{
+    font-weight: 500;
+}
+
+.user-info img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid black;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p{
+    width: 100%;
+    color: #525252;
+}
+.sub-menu-link p:hover{
+    color: #359381;
+}
+
+.sub-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+    font-weight: 600;
+}

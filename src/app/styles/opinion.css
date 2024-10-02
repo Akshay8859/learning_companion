@@ -1,0 +1,136 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e1f7f6;
+    color: #333;
+}
+
+
+/*
+body {
+    background-image: url('g2.webp'); /* Path to your image */
+    /*background-size: cover; /* Ensures the image covers the entire background 
+    background-position: center; /* Centers the image 
+    background-repeat: no-repeat; /* Prevents the image from repeating 
+    background-attachment: fixed; /* Keeps the background fixed while scrolling
+}*/
+header {
+    background-color:#09020f;
+    background-image: url('../../../public/g1.webp');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+    padding: 48px 6px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.opinion-form-section {
+    background-color:#ebeded;
+    padding: 17px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+ 
+}
+
+.opinion-form-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.opinion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+select, input[type="text"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    background-color:#faf7fc;
+    padding-right: 2px;
+    padding-left: 0px;
+}
+
+select:focus, input:focus, textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+    height:100px;
+    resize: horizontal;
+    padding-right:2px;
+    padding-left: 0px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    color: white;
+    background-color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a6adad;
+}
+
+/* Footer */
+footer {
+    background-color:#09020f;
+    background-color:#09020f;
+    background-image: url('../../../public/g1.webp');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+    color:black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}

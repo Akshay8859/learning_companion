@@ -1,0 +1,155 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+
+
+/* Mini Games Section */
+section{
+    background-color: #003329;
+    min-height: 683px;
+    text-align: center;
+}
+.mini-games-section {
+    background-color: #003329;
+    min-height: 683px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* Game Grid */
+.game-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    gap: 30px;
+}
+
+/* Game Card */
+.game-card {
+    background: #fff;
+    border: 5px solid #359381;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.game-icon img {
+    width: 175px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.game-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #359381;
+}
+
+.game-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.play-btn {
+    text-decoration: none;
+    background-color: #359381;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.play-btn:hover {
+    background-color: #28765f;
+}
+
+/* Contest Section */
+.contest-section {
+    background-color: #003329;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contest-content {
+    background: #fff;
+    border: 5px solid #359381;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contest-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #003329;
+}
+
+.contest-section .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.contest-btn {
+    text-decoration: none;
+    background-color: #359381;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.contest-btn:hover {
+    background-color: #28765f;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 1rem;
+}

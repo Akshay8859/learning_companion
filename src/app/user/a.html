@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            background-color: #359381;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 30px;
+            transition: background 0.3s;
+        }
+
+        .navigation a:hover {
+            background-color: #fff;
+            color: #359381;
+        }
+
+        .profile {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            right: 30px;
+            top: 0;
+            padding: 28px 0px 0px 30px;
+            /* background-color: red; */
+            z-index: 1000;
+        }
+
+        .user-pic {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 5px solid black;
+            box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+        }
+
+        .sub-menu-wrap {
+            position: absolute;
+            top: 100px;
+            right: 10px;
+            width: 320px;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.5s;
+        }
+
+        .sub-menu-wrap.open-menu {
+            max-height: 400px;
+        }
+
+        .sub-menu {
+            background: #fff;
+            padding: 20px;
+            margin: 7px;
+            border-radius: 20px;
+        }
+
+        .sub-menu hr {
+            border: 0;
+            height: 1px;
+            width: 100%;
+            background: #ccc;
+            margin: 15px 0 10px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info h3 {
+            font-weight: 500;
+        }
+
+        .user-info img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 2px solid black;
+        }
+
+        .sub-menu-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #525252;
+            margin: 12px 0;
+        }
+
+        .sub-menu-link p {
+            width: 100%;
+        }
+
+        .sub-menu-link img {
+            width: 40px;
+            background: #e5e5e5;
+            border-radius: 50%;
+            padding: 8px;
+            margin-right: 15px;
+        }
+
+        .sub-menu-link span {
+            font-size: 22px;
+            transition: transform 0.5s;
+        }
+
+        .sub-menu-link:hover span {
+            transform: translateX(5px);
+        }
+
+        .sub-menu-link:hover p {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class='heading'>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/GamesPage" class="active">Games</a>
+            <a href="/blog">Blog</a>
+            <a href="/support">Support</a>
+            <a href="/chat" class="active">Chat</a>
+            <a href="/learn">Learn</a>
+            <a href='/history'>History</a>
+            <a href="/opinion">Opinion</a>
+            <a href="/practice" class="active">Practice</a>
+
+            <a href="/user">Profile</a>
+
+        </nav>
+
+    </div>
+    <section class="profile">
+        <img src="/avatar.png" class="user-pic" onclick="toggleMenu()" />
+        <div class="sub-menu-wrap" ref={refer} id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="/avatar.png" />
+                    <h3>User Name</h3>
+                </div>
+                <hr />
+                <a href="#" class="sub-menu-link">
+                    <img src="/profile.png" />
+                    <p>View Profile</p>
+                    <span></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="/setting.png" />
+                    <p>Settings & Privacy</p>
+                    <span></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="/help.png" />
+                    <p>Help & Support</p>
+                    <span></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="/logout.png" />
+                    <p>Logout</p>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+<script>
+    const refer = document.getElementById('subMenu')
+    const toggleMenu = () => {
+
+        refer.classList.toggle("open-menu");
+    }
+</script>
+
+</html>

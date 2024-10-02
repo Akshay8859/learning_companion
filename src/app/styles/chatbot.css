@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.signup {
+    background-color: #00bcd4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.signup:hover {
+    background-color: #0097a7;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    text-decoration: none;
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #0097a7;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animation for floating effect */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+}
+
+#chatbot-section {
+    background-color: #f0f4f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.chatbot-container {
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.chatbot h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.chat-window {
+    border: 2px solid #003366;
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-output {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input-area input {
+    flex-grow: 1;
+    padding: 15px;
+    border: none;
+    font-size: 1em;
+    outline: none;
+}
+
+.chat-input-area button {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input-area button:hover {
+    background-color: #005599;
+}
+
+/* Floating effect */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Responsive Design */
+/* Previous CSS for hero section, navbar, and chatbot remains unchanged */
+
+/* Improved Mobile Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-text p {
+        font-size: 0.9em;
+        padding: 0 10px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 60%;
+        background-color: #0033a0;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Ensure the input and button fit properly in mobile view */
+    .chat-input-area {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%; /* Make sure input area uses full width */
+    }
+
+    .chat-input-area input {
+        flex: 1;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%; /* Ensure input takes up full available space */
+        box-sizing: border-box; /* Ensure padding is accounted for in width */
+        margin-right: 10px;
+    }
+
+    .chat-input-area button {
+        padding: 10px 15px;
+        font-size: 1em;
+        background-color: #0033a0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        flex-shrink: 0; /* Prevent the button from shrinking */
+    }
+
+    .chat-input-area button:active {
+        background-color: #002080;
+    }
+
+    /* Adjust the chat window for mobile view */
+    .chat-window {
+        height: 300px; /* Adjust height for smaller screens */
+        width: 100%; /* Ensure chat window takes full width */
+    }
+
+    .chat-container {
+        width: 100%; /* Ensure container takes up full screen width */
+        padding: 10px; /* Add padding for breathing room */
+        box-sizing: border-box;
+    }
+}
+
+/* Additional styling to make the chat more readable on smaller devices */
+.message {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+}
